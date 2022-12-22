@@ -71,7 +71,6 @@
     
     - ACL for host h14 
         - Block IPV4 pings while allowing IPV6 and ARPs.
-            - **Note**: <br> Verify if the ping blocks pings incoming or outcoming (or both)
         - Mirror (needs extra investigation, p. ex. specify a host through its MAC address or IP instead of the switch's port), but redirects traffic blocked to a port.
 
     - To be tested:
