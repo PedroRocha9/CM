@@ -1,0 +1,39 @@
+Tutoriais feitos - Faucet, IPSec (sem as partes custom/monitor), OVS Advanced Features e Conntrack tentei mas tinha bue problemas
+	Importantes porque -> configurações de flows e das tabelas do Faucet, que são feitas de maneira diferente do ONOS
+Aquilo já vem com tabelas definidas, do tipo, este tipo de regras vão para tabela X (apontado pelo clérigo)
+Depois disso, temos setup com 2 switches, 4 hosts, 2 vlans e está seted up no Mininet. 
+Se conseguisse hoje a noite tentava fazer o mesmo mas no GNS, ou pelo menos tentar para dizer ao prof
+
+
+Main:
+Apresentar caracteristicas de algo que fosse util em SDN e não num router normal CISCO
+
+- VLAN and IPSec with Layer 2 switches
+
+- Gerar nos hosts trafego que consiga suscitar packet-ins no lado do switch
+	- Confs do Faucet que obrigue a fazer flow mod
+	- SDN App (o que o Faucet consulta) para produzir o flow mod
+	- Não configuração do .yaml
+	
+- Faucet dar trigger a uma app para monitorização, logging/estatistica, etc
+
+- PacketIn: switch fica parado waiting for regra
+	- regra é instalada 
+	- packets na queue começam a receber o tratamento
+	- Calcular delay do pacote chegar ao switch, esperar pelo controller
+	- Muita testagem (calcular desvio padrão, média, etc)
+	
+	- aumentado o tamanho do pacote 
+	- forçar o buffer do switch a encher (packet drop, queue delay, throughput, latency)
+	- testar outros tipos de trafego (TCP, UDP, not only pings)
+	- Host do iperf (client - server connection)
+	
+- Virtualização no ubuntu - KVM 
+
+- Capturar TCPdump do host criado fora com interface virtual que liga à rede
+
+- Switches Legacy
+
+Optional - Super optional - mega optional - hyper optional - basically we ain't doing it andrézinho:
+- Tests with ONOS
+	- Graph 
