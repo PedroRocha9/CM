@@ -79,21 +79,21 @@
         - ACL for QoS (prioritize IP, specific VLANs, types of packets (p. ex., VoIP vs. ICMP), ...)
         - ACL for blocking P2P File Sharing (for example)
 
-5. We've done something with ONOS!
+5. We've done something with ONOS! <br>
 
 ### Learned
 
-1. Some tutorial feedback (refer to cm.txt with notes)
+1. Some tutorial feedback (refer to cm.txt with notes) <br>
     Also, waiting for feeback in OVS discussion mailing list
 
-2. Faucet commands to hot-reload .yaml configurations.
+2. Faucet commands to hot-reload .yaml configurations. <br>
 
-3. Debugging with Mininet (xterm to open a console (where we can use TCPdump), wireshark to capture packets, ifconfig, ...).
+3. Debugging with Mininet (xterm to open a console (where we can use TCPdump), wireshark to capture packets, ifconfig, ...). <br>
 
 
 ### To Do
 
-1. GNS3 fix what is done
+1. GNS3 fix what is done <br>
     Implement a minimal SDN setup in GNS3.<br>
     **Note**: <br> Switches aren't working with the controller, connection to virbr0 (virtual bridge) seems fuzzy
     
@@ -110,18 +110,18 @@
     Create a setup where we have 2 networks, one where there's the normal flow of a SDN network (**DATA**) and the other that has a backup of the controller (**CONTROL**), creating redundancy and failsafe situations. <br>
     We can find this [here](href="https://github.com/mininet/mininet/blob/master/examples/controlnet.py").
 
-5. MiniEdit (mininet UI) / IT2's Hybrid infrasctructure
+5. MiniEdit (mininet UI) / IT2's Hybrid infrasctructure <br>
     Use MiniEdit to show that we can create a hybrid network setup, i.e. using legacy switches and SDN-support switches.
 
-6. ONOS
+6. ONOS <br>
     Make comparisons of latency, packet drop, queue delay and throughput using two controllers (Faucet and ONOS) with equal network setups.
 
-7. Performance
+7. Performance <br>
     Test the perfomance of the network (p. ex. using 100 switches, 100 hosts, which requires recompiling mininet, etc) 
     There's an implementation of this [here](href="https://github.com/mininet/mininet/blob/master/examples/linearbandwidth.py")<br>
     **Note**: <br> Clarify with the profz (is it worth it?)
 
-8. Questions
+8. Questions <br>
     Should we implement NAT/PAT in the SDN controller? <br>
     Should we implement a VPN in the SDN controller? <br>
     Should we implement routing (using routers instead of switches) in the SDN controller? <br>
