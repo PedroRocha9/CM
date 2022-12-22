@@ -31,7 +31,7 @@
 
     - Use ```pingall``` to test connectivity between hosts. <br>
     - **Note**: <br>
-    Verify that the pings between VLANs from h13 to h32 go through s1.
+    We saw that the pings between VLANs from h31 to h32 go through s1.
 
 3. GNS3 Setup <br>
     Notation: hij -> host j of VLAN i <br>
