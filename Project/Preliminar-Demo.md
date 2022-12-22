@@ -7,7 +7,7 @@
 1. OVS Tutorials: Faucet, IPSec, Connection Tracking (some problems, contacted mailing list), OVS Advanced Features.
 
 2. Setup VLANs <br>
-    Notation: hij: host j of VLAN i
+    Notation: hij -> host j of VLAN i
     s1-s2: vlans 10, 20, 30 <br>
     s1-s3: vlans 10, 30 <br>
     s3-s2: vlans 20 <br>
@@ -33,12 +33,12 @@
     - **Note**: <br>
     Verify that the pings between VLANs from h13 to h32 go through s1.
 
-3. Setup ACLs
-    Notacao: hij: host j of VLAN i
-    s1-s2: vlans 10, 20, 30
-    s1-s3: vlans 10, 30
-    s3-s2: vlans 20
-    s2-s3; vlans 10, 20, 30
+3. Setup ACLs <br>
+    Notation: hij -> host j of VLAN i
+    s1-s2: vlans 10, 20, 30 <br>
+    s1-s3: vlans 10, 30 <br>
+    s3-s2: vlans 20 <br>
+    s2-s3: vlans 10, 20, 30 <br>
 
         h11     h12  h22  h32   h14  h25  h33
             \       \  |  /        \  |  /
@@ -65,7 +65,7 @@
     - To be tested:
         - ACL for blocking IPs (malicious IPs)
         - ACL for QoS (prioritize IP, specific VLANs, types of packets (p. ex., VoIP vs. ICMP), ...)
-        - ACL for blocking P2P (for example)
+        - ACL for blocking P2P File Sharing (for example)
 
 
 ### Learned
@@ -90,10 +90,10 @@
     No clue what will be done on this app, maybe just a simple Python functionality.
 
 3. Faucet Configurations <br>
-    3.1. yaml <br>
+    3.1. .yaml ACLs, IPSec and Conntrack <br>
         3.1.1. refered above.<br>
     3.2. Flows <br>
-        3.2.1. Explore more <br>
+        3.2.1. Explore A LOT more (we've done tutorials but haven't applied this)<br>
     
 4. Control and Data network setup <br>
     Create a setup where we have 2 networks, one where there's the normal flow of a SDN network (**DATA**) and the other that has a backup of the controller (**CONTROL**), creating redundancy and failsafe situations. <br>
