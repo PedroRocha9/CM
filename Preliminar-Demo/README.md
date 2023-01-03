@@ -108,7 +108,7 @@
     
 4. Control and Data network setup <br>
     Create a setup where we have 2 networks, one where there's the normal flow of a SDN network (**DATA**) and the other that has a backup of the controller (**CONTROL**), creating redundancy and failsafe situations. <br>
-    We can find this [here](href="https://github.com/mininet/mininet/blob/master/examples/controlnet.py").
+    We can find this [here](https://github.com/mininet/mininet/blob/master/examples/controlnet.py).
 
 5. MiniEdit (mininet UI) / IT2's Hybrid infrasctructure <br>
     Use MiniEdit to show that we can create a hybrid network setup, i.e. using legacy switches and SDN-support switches.
@@ -118,7 +118,7 @@
 
 7. Performance <br>
     Test the perfomance of the network (p. ex. using 100 switches, 100 hosts, which requires recompiling mininet, etc) 
-    There's an implementation of this [here](href="https://github.com/mininet/mininet/blob/master/examples/linearbandwidth.py")<br>
+    There's an implementation of this [here](https://github.com/mininet/mininet/blob/master/examples/linearbandwidth.py)<br>
     **Note**: <br> Clarify with the profz (is it worth it?)
 
 8. Questions <br>
